@@ -34,7 +34,7 @@ permalink: /documentation/
                 <ul id="portfolio-contant-active">
                     <li class="mix Manual">
                       <a href="#">
-                        <img src="{{ site.baseurl }}/img/portfolio/work1.jpg" alt="">
+                        <img src="{{ "/img/portfolio/work1.jpg" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="">
                         <div class="overly">
                           <div class="position-center">
                             <h2>User Manual</h2>
@@ -44,7 +44,7 @@ permalink: /documentation/
                   </li>
                   <li class="mix Manual">
                     <a href="#">
-                      <img src="{{ site.baseurl }}/img/portfolio/work3.jpg" alt="">
+                      <img src="{{ "/img/portfolio/work3.jpg" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="">
                       <div class="overly">
                         <div class="position-center">
                           <h2>Technical Manual</h2>
@@ -55,7 +55,7 @@ permalink: /documentation/
                   </li>
                   <li class="mix Video">
                     <a href="#">
-                      <img src="{{ site.baseurl }}/img/portfolio/work5.jpg" alt="">
+                      <img src="{{ "/img/portfolio/work5.jpg" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="">
                       <div class="overly">
                         <div class="position-center">
                           <h2>Video Demo</h2>
