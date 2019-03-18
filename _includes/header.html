@@ -14,8 +14,8 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">
-              <img src="{{ "/img/logo.png" | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="Logo">
+            <a class="navbar-brand" href="{{ site.title | prepend: "/" | prepend: site.url }}">
+              <img src="{{ "/img/logo.png" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="Logo">
             </a>
           </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
