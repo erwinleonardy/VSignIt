@@ -5,12 +5,12 @@
       <div class="col-md-12">
         <div class="footer-manu">
           <ul>
-            <li><a href="/#about">About Us</a></li>
-            <li><a href="/#goal">Our Goal</a></li>
-            <li><a href="{{ site.baseurl }}/contact">Contact us</a></li>
-            <li><a href="{{ site.baseurl }}/documentation">How it works</a></li>
-            <li><a href="{{ site.baseurl }}/blog">Blog</a></li>
-            <li><a href="{{ site.baseurl }}/team">Team</a></li>
+            <li><a href="{{ "/#about" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}">About Us</a></li>
+            <li><a href="{{ "/#goal" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}">Our Goal</a></li>
+            <li><a href="{{ "/contact" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}">Contact us</a></li>
+            <li><a href="{{ "/documentation" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}">How it works</a></li>
+            <li><a href="{{ "/blog" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}">Blog</a></li>
+            <li><a href="{{ "/team" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}">Team</a></li>
           </ul>
         </div>
         <p>Copyright &copy; 4youreyesonly 2019</p>
