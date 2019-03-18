@@ -34,5 +34,5 @@ ul li li {
   </section>
 </div>
 <p class="center-text" style="padding: 30px;">
-  <a href="{{ site.baseurl }}/blog">Back to blog</a>
+  <a href="{{ "/blog" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}">Back to blog</a>
 </p>
