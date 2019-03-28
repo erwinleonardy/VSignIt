@@ -1,7 +1,7 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "VSignIt"
+  spec.name          = "4youreyesonly"
   spec.version       = "0.1.0"
   spec.authors       = ["erwinleonardy"]
 
