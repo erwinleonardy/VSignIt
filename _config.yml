@@ -14,8 +14,8 @@ keep_files:
 
 
 # Site settings
-title: VSignIt
-subtitle: "A top-notch signature visual cryptographic tool"
+title: 4youreyesonly
+subtitle: "A top-notch visual cryptographic tool"
 # url: "http://ndrewtl.github.io" # the base hostname & protocol for your site
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
 baseurl: ""
