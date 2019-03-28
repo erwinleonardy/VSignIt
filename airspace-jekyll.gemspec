@@ -1,12 +1,11 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "4youreyesonly"
+  spec.name          = "VSignIt"
   spec.version       = "0.1.0"
   spec.authors       = ["erwinleonardy"]
 
   spec.summary       = %q{A port of ThemeFisher's Airspace theme. https://github.com/themefisher/airspace-free-html5-agency-template}
-  spec.homepage      = "http://example.com"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(_layouts|_includes|_sass|LICENSE|README)/i}) }
