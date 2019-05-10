@@ -221,7 +221,9 @@ permalink: /features/
       $('#list-tab a').on('click', function (e) {
         e.preventDefault();
         $('#list-tab a.active').removeClass("active");
-        var toBeHidden = $('#list-tab a.active').attr('id');
+       
+        // var toBeHidden = $('#list-tab a.active').attr('id');
+        var toBeHidden = document.getElementById('#list-tab a.active');
         console.log(toBeHidden);
       
         $(document.getElementById(e.target.id.slice(0, -5))).show();
