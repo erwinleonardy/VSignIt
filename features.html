@@ -41,6 +41,31 @@ permalink: /features/
           <p>Our program is split into FOUR different components, namely: Learning Tool, Admin Share Generation, Admin Share Reconstruction, Client Cheque Upload</p>
           <br />
 
+          <div class="row">
+            <div class="col-4">
+              <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-learning-list" data-toggle="list" href="#list-learning" role="tab" aria-controls="home">Learning Tool</a>
+                <a class="list-group-item list-group-item-action" id="list-setup-list" data-toggle="list" href="#list-setup" role="tab" aria-controls="profile">Pre-Setup Phase</a>
+                <a class="list-group-item list-group-item-action" id="list-login-list" data-toggle="list" href="#list-login" role="tab" aria-controls="messages">Login Page</a>
+                <a class="list-group-item list-group-item-action" id="list-admin-generation-list" data-toggle="list" href="#list-admin-generation" role="tab" aria-controls="settings">Admin Share Generation Page</a>
+                <a class="list-group-item list-group-item-action" id="list-client-list" data-toggle="list" href="#list-client" role="tab" aria-controls="settings">Client Page</a>
+                <a class="list-group-item list-group-item-action" id="list-admin-reconstruction-list" data-toggle="list" href="#list-admin-reconstruction" role="tab" aria-controls="settings">Admin Share Reconstruction Page</a>
+                <a class="list-group-item list-group-item-action" id="list-admin-verification-list" data-toggle="list" href="#list-admin-verification" role="tab" aria-controls="settings">Admin Share Verification Page</a>
+              </div>
+            </div>
+            <div class="col-8">
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-learning" role="tabpanel" aria-labelledby="list-learning-list">A</div>
+                <div class="tab-pane fade" id="list-setup" role="tabpanel" aria-labelledby="list-setup-list">B</div>
+                <div class="tab-pane fade" id="list-login" role="tabpanel" aria-labelledby="list-login-list">C</div>
+                <div class="tab-pane fade" id="list-admin-generation" role="tabpanel" aria-labelledby="list-admin-generation-list">D</div>
+                <div class="tab-pane fade" id="list-client" role="tabpanel" aria-labelledby="list-client-list">E</div>
+                <div class="tab-pane fade" id="list-admin-reconstruction" role="tabpanel" aria-labelledby="list-admin-reconstruction-list">F</div>
+                <div class="tab-pane fade" id="list-admin-verification" role="tabpanel" aria-labelledby="list-admin-verification-list">G</div>
+              </div>
+            </div>
+          </div>
+
           <p class="lead font-weight-bold">0) Learning Tool</p>
           <hr />
           <img src="{{ "/img/screenshots/Learning_Tool_1.png" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="Learning_Tool_1" style="max-width:700px" width="100%">
