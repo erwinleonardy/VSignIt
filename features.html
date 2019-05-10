@@ -192,14 +192,17 @@ permalink: /features/
     $("#recon_clean_containter").twentytwenty();
 
     $(document).ready(function(){
-      $('#myList a:first-child').tab('show') // Select first tab
+      // $('#myList a:first-child').tab('show') // Select first tab
+
+      $('#list-tab a.active').removeClass("active")
 
       $('#list-tab a').on('click', function (e) {
         alert("new");
         e.preventDefault();
         $(this).tab('show');
         console.log(e);
-        console.log(e.delegateTarget);
+        console.log(e.target);
+        console.log(e.toElement);
         console.log("\n\n\n");
       })
 
