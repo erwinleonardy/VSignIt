@@ -196,12 +196,12 @@ permalink: /features/
 </style>
 
 <script>
-  document.getElementById("list-setup").style.visibility = "hidden";
-  document.getElementById("list-login").style.visibility = "hidden";
-  document.getElementById("list-admin-generation").style.visibility = "hidden";
-  document.getElementById("list-client").style.visibility = "hidden";
-  document.getElementById("list-admin-reconstruction").style.visibility = "hidden";
-  document.getElementById("list-admin-verification").style.visibility = "hidden";
+  document.getElementById("list-setup").style.display = "none";
+  document.getElementById("list-login").style.display = "none";
+  document.getElementById("list-admin-generation").style.display = "none";
+  document.getElementById("list-client").style.display = "none";
+  document.getElementById("list-admin-reconstruction").style.display = "none";
+  document.getElementById("list-admin-verification").style.display = "none";
 
   $(window).on("load", function() {
     $("#recon_clean_containter").twentytwenty();
@@ -209,7 +209,7 @@ permalink: /features/
     $(document).ready(function(){
       $('#list-tab a').on('click', function (e) {
         e.preventDefault();
-        document.getElementById(e.id).style.visibility = "visible";
+        document.getElementById(e.id).style.display = "inline";
         $('#list-tab a.active').removeClass("active");
         $(this).tab('show');
       })
