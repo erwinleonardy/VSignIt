@@ -196,33 +196,26 @@ permalink: /features/
 </style>
 
 <script>
+  $('#list-setup').hide();
+  $('#list-login').hide();
+  $('#list-admin-generation').hide();
+  $('#list-client').hide();
+  $('#list-admin-reconstruction').hide();
+  $('#list-admin-verification').hide();
+
   $(window).on("load", function() {
     $("#recon_clean_containter").twentytwenty();
 
     $(document).ready(function(){
-      // $('#myList a:first-child').tab('show') // Select first tab
-
-      
-
       $('#list-tab a').on('click', function (e) {
         e.preventDefault();
         $('#list-tab a.active').removeClass("active");
         $(this).tab('show');
-        console.log(e);
-        console.log(e.target);
-        console.log(e.toElement);
-        console.log("\n\n\n");
       })
 
       $('a[data-toggle="list"]').on('shown.bs.tab', function (e) {
         newTab = e.target; // newly activated tab
         $(newTab).addClass( "active" )
-        prevTab = e.relatedTarget; // previous active tab
-
-        console.log(newTab);
-        console.log(prevTab);
-
-        // $(newTab).removeClass( "active" )
       });
     });
   });
