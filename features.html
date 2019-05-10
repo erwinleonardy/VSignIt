@@ -217,15 +217,20 @@ permalink: /features/
 
     $(document).ready(function(){
       $('#list-tab a').on('click', function (e) {
+        console.log("A");
         e.preventDefault();
         $('#list-tab a.active').removeClass("active");
+        console.log("B");
         $(this).tab('show');
+        console.log("C");
       })
 
       $('a[data-toggle="list"]').on('shown.bs.tab', function (e) {
         newTab = e.target; // newly activated tab
         // document.getElementById(newTab.id).style.display = "initial";
-        $(newTab).addClass( "active" )
+        console.log("D");
+        $(newTab).addClass( "active" );
+        console.log("E");
       });
     });
   });
