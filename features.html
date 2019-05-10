@@ -210,13 +210,13 @@ permalink: /features/
     $(document).ready(function(){
       $('#list-tab a').on('click', function (e) {
         e.preventDefault();
-        document.getElementById(e.target.id).style.display = "inline-block";
         $('#list-tab a.active').removeClass("active");
         $(this).tab('show');
       })
 
       $('a[data-toggle="list"]').on('shown.bs.tab', function (e) {
         newTab = e.target; // newly activated tab
+        document.getElementById(newTab.id).style.display = "inline-block";
         $(newTab).addClass( "active" )
       });
     });
