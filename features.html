@@ -57,7 +57,7 @@ permalink: /features/
               <div class="tab-content" id="nav-tabContent">
 
                 <!-- Learning Tool -->
-                <div class="tab-pane fade show" id="list-learning" role="tabpanel" aria-labelledby="list-learning-list">
+                <div class="tab-pane fade" id="list-learning" role="tabpanel" aria-labelledby="list-learning-list">
                   <p class="lead font-weight-bold">0) Learning Tool</p>
                   <hr />
                   <img src="{{ "/img/screenshots/Learning_Tool_1.png" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="Learning_Tool_1" style="max-width:700px" width="100%">
@@ -196,13 +196,21 @@ permalink: /features/
 </style>
 
 <script>
-  document.getElementById("list-learning").style.display = "none";
-  document.getElementById("list-setup").style.display = "none";
-  document.getElementById("list-login").style.display = "none";
-  document.getElementById("list-admin-generation").style.display = "none";
-  document.getElementById("list-client").style.display = "none";
-  document.getElementById("list-admin-reconstruction").style.display = "none";
-  document.getElementById("list-admin-verification").style.display = "none";
+  $('#list-learning').tab('hide');
+  $('#list-setup').tab('hide');
+  $('#list-login').tab('hide');
+  $('#list-admin-generation').tab('hide');
+  $('#list-client').tab('hide');
+  $('#list-admin-reconstructio').tab('hide');
+  $('#list-admin-verification').tab('hide');
+
+  // document.getElementById("").style.display = "none";
+  // document.getElementById("").style.display = "none";
+  // document.getElementById("list-").style.display = "none";
+  // document.getElementById("list-").style.display = "none";
+  // document.getElementById("list-").style.display = "none";
+  // document.getElementById("list-n").style.display = "none";
+  // document.getElementById("list-").style.display = "none";
 
   $(window).on("load", function() {
     $("#recon_clean_containter").twentytwenty();
@@ -216,7 +224,7 @@ permalink: /features/
 
       $('a[data-toggle="list"]').on('shown.bs.tab', function (e) {
         newTab = e.target; // newly activated tab
-        document.getElementById(newTab.id).style.display = "initial";
+        // document.getElementById(newTab.id).style.display = "initial";
         $(newTab).addClass( "active" )
       });
     });
