@@ -30,6 +30,7 @@ permalink: /features/
           <p class="lead font-weight-bold">Key Features</p>
           <hr />
             <p><b>Revocability</b> : The bank and client shares can be revoked and replaced at any time as long as the bank administrator is present.</p>
+            <p><b>Confidentiality</b> : We use Visual Steganography to hide the shares in seemingly innnocuous images to provide our clients with the utmost confidentiality.</p>
             <p><b>Ease of Use</b> : Upon the share generation phase, the only thing the client needs to do is to upload the cheque and click sign! There is no need for the bank or client to keep on uploading their shares to reconstruct the signature. </p>
             <p><b>Crystal Clear Reconstructed Images</b> : We use state-of-the-art visual cryptography technique to encrypt, decrypt, and clean the reconstucted images. 99% of the orginal image is preserved.</p>
           <br />
@@ -39,14 +40,21 @@ permalink: /features/
           <hr />
           <p>Our program is split into FOUR different components, namely: Learning Tool, Admin Share Generation, Admin Share Reconstruction, Client Cheque Upload</p>
           <br />
+          <div id="recon_clean_containter" style="max-width: 400px; padding: 0px !important; margin: 0px auto" class="col-xs-6 col-sm-12 col-md-12 col-lg-6">
+            <img src="https://raw.githubusercontent.com/erwinleonardy/VSignIt/master/img/public/recon_share.png">
+            <img src="https://raw.githubusercontent.com/erwinleonardy/VSignIt/master/img/public/recon_clean.png">
+          </div>
+          <div class="col-xs-6 col-sm-12 col-md-12 col-lg-6" style="padding: 0px !important; max-width:400px; margin: 0px auto">
+            <div id="response-msg" class="alert alert-info" role="alert" style="width:100%; text-align: center">TRY IT OUT : <b>Move the slider</b> to see the magic!</div>
+          </div>
 
           <p class="lead font-weight-bold">0) Learning Tool</p>
           <hr />
           <img src="{{ "/img/screenshots/Learning_Tool_1.png" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="Learning_Tool_1" style="max-width:700px" width="100%">
-	  <img src="{{ "/img/screenshots/Learning_Tool_2.png" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="Learning_Tool_2" style="max-width:700px" width="100%">
-	  <img src="{{ "/img/screenshots/Learning_Tool_3.png" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="Learning_Tool_3" style="max-width:700px" width="100%">
-	  <img src="{{ "/img/screenshots/Learning_Tool_4.png" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="Learning_Tool_4" style="max-width:700px" width="100%">
-	  <img src="{{ "/img/screenshots/Learning_Tool_5.png" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="Learning_Tool_5" style="max-width:700px" width="100%">
+          <img src="{{ "/img/screenshots/Learning_Tool_2.png" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="Learning_Tool_2" style="max-width:700px" width="100%">
+          <img src="{{ "/img/screenshots/Learning_Tool_3.png" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="Learning_Tool_3" style="max-width:700px" width="100%">
+          <img src="{{ "/img/screenshots/Learning_Tool_4.png" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="Learning_Tool_4" style="max-width:700px" width="100%">
+          <img src="{{ "/img/screenshots/Learning_Tool_5.png" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="Learning_Tool_5" style="max-width:700px" width="100%">
           <ol>
             <li>
               <p>Learning Tool page to learn more on Cryptography and Steganography with an included Mini Quiz at the end.</p>
@@ -54,7 +62,7 @@ permalink: /features/
           </ol>
           <br />
 		
-	  <p class="lead font-weight-bold">i) Pre-Setup Phase</p>
+	        <p class="lead font-weight-bold">i) Pre-Setup Phase</p>
           <hr />
           <img src="{{ "/img/screenshots/Sign-Up.png" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="Sign-Up" style="max-width:700px" width="100%">
           <ol>
@@ -160,3 +168,9 @@ permalink: /features/
     padding-left: 0px;
 }
 </style>
+
+<script>
+  $(window).on("load", function() {
+    $("#recon_clean_containter").twentytwenty();
+  });
+</script>
