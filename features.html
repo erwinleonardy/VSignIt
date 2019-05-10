@@ -216,7 +216,7 @@ permalink: /features/
 
       $('a[data-toggle="list"]').on('shown.bs.tab', function (e) {
         newTab = e.target; // newly activated tab
-        document.getElementById(newTab.id).style.display = "inline-block";
+        document.getElementById(newTab.id).style.display = "initial";
         $(newTab).addClass( "active" )
       });
     });
