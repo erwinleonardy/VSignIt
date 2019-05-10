@@ -26,16 +26,16 @@ permalink: /faq/
       <div class="row" style="margin-left:10px; margin-right:10px">
         <div>
           <div class="block">
-            
+
             <p class="lead font-weight-bold">Installation (Mac)</p>
             <hr />
-            <p><b>How to handel MySQL Error during installation?</b></p>
+            <p><b>1) How to handle MySQL Error during installation?</b></p>
             <blockquote class="blockquote">
-              ImportError: dlopen(/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/MySQLdb/_mysql.cpython-37m-darwin.so, 2): Library not loaded: @rpath/libmysqlclient.21.dylib Referenced from: /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/MySQLdb/_mysql.cpython-37m-darwin.so Reason: image not found
+              <p>ImportError: dlopen(/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/MySQLdb/_mysql.cpython-37m-darwin.so, 2): Library not loaded: @rpath/libmysqlclient.21.dylib Referenced from: /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/MySQLdb/_mysql.cpython-37m-darwin.so Reason: image not found</p>
             </blockquote>
             <p>Add the following line to the <b>~/.bash_profile</b> file: </p>
             <blockquote class="blockquote">
-              export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/:$DYLD_LIBRARY_PATH
+              <p>export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/:$DYLD_LIBRARY_PATH</p>
             </blockquote>
             <br />
             
