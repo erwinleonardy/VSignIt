@@ -115,56 +115,57 @@ permalink: /features/
                   </ol>
                   <br />
                 </div>
-                <div class="tab-pane fade" id="list-client" role="tabpanel" aria-labelledby="list-client-list">E</div>
-                <div class="tab-pane fade" id="list-admin-reconstruction" role="tabpanel" aria-labelledby="list-admin-reconstruction-list">F</div>
-                <div class="tab-pane fade" id="list-admin-verification" role="tabpanel" aria-labelledby="list-admin-verification-list">G</div>
+
+                <!-- Client Page -->
+                <div class="tab-pane fade" id="list-client" role="tabpanel" aria-labelledby="list-client-list">
+                  <p class="lead font-weight-bold">iv) Client Page</p>
+                  <hr />
+                  <img src="{{ "/img/screenshots/Client.png" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="Client-Page" style="max-width:700px" width="100%">
+                  <ol>
+                    <li>
+                      <p>Client would choose their preferred Bank in the selection box menu; upload their cheque to be signed and the cheque will be sent to the Bank for approval.</p>
+                    </li>
+                  </ol>
+                  <br />
+                </div>
+
+                 <!-- Admin Share Reconstruction Page-->
+                <div class="tab-pane fade" id="list-admin-reconstruction" role="tabpanel" aria-labelledby="list-admin-reconstruction-list">
+                  <p class="lead font-weight-bold">v) Admin Share Reconstruction Page</p>
+                  <hr />
+                  <p class="font-italic">The bank would see all the cheque transactions sent by the client and futher actions are required by the bank.</p>
+                  <img src="{{ "/img/screenshots/Share-Reconstruction.png" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="Share-Reconstruction" style="max-width:700px" width="100%">
+                  <ol>
+                    <li>
+                      <p>The bank would need to either verify the cheque by clicking 'Verify' or</p>
+                    </li> 
+                    <li>
+                      <p>'Delete' if the cheque has been wrongly sent to the bank.</p>
+                    </li> 
+                  </ol>
+                </div>
+
+                 <!-- Admin Share Verification Page -->
+                <div class="tab-pane fade" id="list-admin-verification" role="tabpanel" aria-labelledby="list-admin-verification-list">
+                  <p class="lead font-weight-bold">vi) Admin Share Verification Page</p>
+                  <hr />
+                  <p class="font-italic">Upon, clicking 'Verify' on the individual transaction on the Admin Share Reconstruction Page, the bank would see the client's cheque that needs to be verified.</p>
+                  <img src="{{ "/img/screenshots/Share-Verification.png" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="Share-Verification" style="max-width:700px" width="100%">
+                  <ol>
+                    <li>
+                      <p>The bank would need click on 'Accept' to confirm the verification or</p>
+                    </li> 
+                    <li>
+                      <p>'Reject' if the cheque has been wrongly sent to the bank.</p>
+                    </li>	  
+                    <li>
+                      <p>The client and bank will be notified through email on the outcome of the cheque.</p>
+                    </li>	 
+                  </ol>
+                </div>
               </div>
             </div>
           </div>
-		
-		
-          <!-- Client Page -->
-          <p class="lead font-weight-bold">iv) Client Page</p>
-          <hr />
-          <img src="{{ "/img/screenshots/Client.png" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="Client-Page" style="max-width:700px" width="100%">
-          <ol>
-            <li>
-              <p>Client would choose their preferred Bank in the selection box menu; upload their cheque to be signed and the cheque will be sent to the Bank for approval.</p>
-            </li>
-          </ol>
-          <br />
-          
-          <!-- Admin Share Reconstruction Page-->
-          <p class="lead font-weight-bold">v) Admin Share Reconstruction Page</p>
-          <hr />
-          <p class="font-italic">The bank would see all the cheque transactions sent by the client and futher actions are required by the bank.</p>
-          <img src="{{ "/img/screenshots/Share-Reconstruction.png" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="Share-Reconstruction" style="max-width:700px" width="100%">
-          <ol>
-            <li>
-              <p>The bank would need to either verify the cheque by clicking 'Verify' or</p>
-            </li> 
-            <li>
-              <p>'Delete' if the cheque has been wrongly sent to the bank.</p>
-            </li> 
-          </ol>
-		
-          <!-- Admin Share Verification Page -->
-          <p class="lead font-weight-bold">vi) Admin Share Verification Page</p>
-          <hr />
-          <p class="font-italic">Upon, clicking 'Verify' on the individual transaction on the Admin Share Reconstruction Page, the bank would see the client's cheque that needs to be verified.</p>
-          <img src="{{ "/img/screenshots/Share-Verification.png" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="Share-Verification" style="max-width:700px" width="100%">
-          <ol>
-            <li>
-              <p>The bank would need click on 'Accept' to confirm the verification or</p>
-            </li> 
-            <li>
-              <p>'Reject' if the cheque has been wrongly sent to the bank.</p>
-            </li>	  
-            <li>
-              <p>The client and bank will be notified through email on the outcome of the cheque.</p>
-            </li>	 
-          </ol>
-          
         </div>
       </div><!-- .col-md-7 close -->
     </div>
