@@ -200,12 +200,13 @@ permalink: /features/
 
     $('a[data-toggle="list"]').on('shown.bs.tab', function (e) {
       newTab = e.target; // newly activated tab
+      $(newTab).addClass( "active" )
       prevTab = e.relatedTarget; // previous active tab
 
       console.log(newTab);
       console.log(prevTab);
 
-      // $(newTab).removeClass( "show active" )
+      // $(newTab).removeClass( "active" )
     })
   });
 </script>
