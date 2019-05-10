@@ -197,7 +197,8 @@ permalink: /features/
       $('#list-tab a').on('click', function (e) {
         e.preventDefault();
         $(this).tab('show');
-        console.log(relatedTarget);
+        console.log(e);
+        console.log(e.relatedTarget);
         console.log("\n\n\n");
       })
 
