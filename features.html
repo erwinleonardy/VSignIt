@@ -209,6 +209,7 @@ permalink: /features/
     $(document).ready(function(){
       $('#list-tab a').on('click', function (e) {
         e.preventDefault();
+        document.getElementById(e.id).style.visibility = "visible";
         $('#list-tab a.active').removeClass("active");
         $(this).tab('show');
       })
