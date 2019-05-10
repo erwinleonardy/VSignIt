@@ -197,6 +197,7 @@ permalink: /features/
 
 <script>
   console.log("1");
+  $('#list-learning').hide();
   $('#list-setup').hide();
   $('#list-login').hide();
   $('#list-admin-generation').hide();
@@ -215,7 +216,6 @@ permalink: /features/
 
   $(window).on("load", function() {
     $("#recon_clean_containter").twentytwenty();
-    $('#list-learning').addClass( "active" );
 
     $(document).ready(function(){
       $('#list-tab a').on('click', function (e) {
@@ -223,8 +223,8 @@ permalink: /features/
         e.preventDefault();
         $('#list-tab a.active').removeClass("active");
         $('#list-tab a.active').hide();
-        
-        $(e.target.href).show();
+      
+        $(document.getElementById(e.target.id.slice(0, -5))).show();
         console.log(e.target.href);
         $(this).tab('show');
         console.log("C");
