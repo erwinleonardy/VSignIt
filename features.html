@@ -198,13 +198,12 @@ permalink: /features/
       $(this).tab('show');
     })
 
-    $(document).click(function(event){
-      $(event.target).closest(".clickable").each(function(){
-        // "this" is your "clickable" clicked
-        console.log("Clicked: ");
-        console.log(this);
-      });
-    });
+    $('a[data-toggle="list"]').on('hide.bs.tab', function (e) {
+      currTab = e.target; // newly activated tab
+      $(currTab).removeClass( "active" )
+
+      console.log(currTab);
+    })
 
     $('a[data-toggle="list"]').on('shown.bs.tab', function (e) {
       newTab = e.target; // newly activated tab
