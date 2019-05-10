@@ -195,9 +195,10 @@ permalink: /features/
       $('#myList a:first-child').tab('show') // Select first tab
 
       $('#list-tab a').on('click', function (e) {
+        alert("new");
         e.preventDefault();
         $(this).tab('show');
-        console.log(e.currentTarget);
+        console.log(e);
         console.log(e.delegateTarget);
         console.log("\n\n\n");
       })
