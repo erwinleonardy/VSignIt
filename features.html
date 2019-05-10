@@ -190,6 +190,11 @@ permalink: /features/
 <script>
   $(window).on("load", function() {
     $("#recon_clean_containter").twentytwenty();
+
+    $('#list-tab a').on('click', function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    })
   });
 </script>
 
