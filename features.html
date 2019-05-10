@@ -196,12 +196,12 @@ permalink: /features/
 </style>
 
 <script>
-  $('#list-setup').hide();
-  $('#list-login').hide();
-  $('#list-admin-generation').hide();
-  $('#list-client').hide();
-  $('#list-admin-reconstruction').hide();
-  $('#list-admin-verification').hide();
+  document.getElementById("list-setup").style.visibility = "hidden";
+  document.getElementById("list-login").style.visibility = "hidden";
+  document.getElementById("list-admin-generation").style.visibility = "hidden";
+  document.getElementById("list-client").style.visibility = "hidden";
+  document.getElementById("list-admin-reconstruction").style.visibility = "hidden";
+  document.getElementById("list-admin-verification").style.visibility = "hidden";
 
   $(window).on("load", function() {
     $("#recon_clean_containter").twentytwenty();
