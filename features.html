@@ -223,14 +223,16 @@ permalink: /features/
         e.preventDefault();
         $('#list-tab a.active').removeClass("active");
         $('#list-tab a.active').hide();
-        console.log("B");
-        $(this).tab('show');
+        
         $('e.target.id').show();
+        console.log('e.target.id');
+        $(this).tab('show');
         console.log("C");
       })
 
       $('a[data-toggle="list"]').on('shown.bs.tab', function (e) {
         newTab = e.target; // newly activated tab
+        console.log('shown.bs.tab');
         // document.getElementById(e.target.id).style.display = "initial";
         $(newTab).addClass( "active" );
       });
