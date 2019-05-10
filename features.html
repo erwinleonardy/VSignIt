@@ -200,8 +200,9 @@ permalink: /features/
 
     $('a[data-toggle="list"]').on('hide.bs.tab', function (e) {
       currTab = e.target; // newly activated tab
-      $(currTab).removeClass( "active" )
+      $(currTab).removeClass( "active" );
 
+      console.log("Hidden");
       console.log(currTab);
     })
 
