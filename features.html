@@ -194,11 +194,11 @@ permalink: /features/
     $(document).ready(function(){
       // $('#myList a:first-child').tab('show') // Select first tab
 
-      $('#list-tab a.active').removeClass("active")
+      
 
       $('#list-tab a').on('click', function (e) {
-        alert("new");
         e.preventDefault();
+        $('#list-tab a.active').removeClass("active");
         $(this).tab('show');
         console.log(e);
         console.log(e.target);
