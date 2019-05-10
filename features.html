@@ -197,7 +197,6 @@ permalink: /features/
 
 <script>
   console.log("1");
-  $('#list-learning').hide();
   $('#list-setup').hide();
   $('#list-login').hide();
   $('#list-admin-generation').hide();
@@ -216,6 +215,7 @@ permalink: /features/
 
   $(window).on("load", function() {
     $("#recon_clean_containter").twentytwenty();
+    $('#list-learning').addClass( "active" );
 
     $(document).ready(function(){
       $('#list-tab a').on('click', function (e) {
