@@ -1,0 +1,121 @@
+---
+layout: page
+title: FAQ
+permalink: /faq/
+---
+
+<!-- Slider Start -->
+<section id="global-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h1>Frequently Asked Questions</h1>
+                    <p>Find the answers to your questions here!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Start -->
+<section id="portfolio-work">
+    <div class="container">
+  
+      <!-- Header -->
+      <div class="row" style="margin-left:10px; margin-right:10px">
+        <div>
+          <div class="block">
+            
+            <p class="lead font-weight-bold">Installation (Mac)</p>
+            <hr />
+            <p><b>How to handel MySQL Error during installation?</b></p>
+            <blockquote class="blockquote">
+              ImportError: dlopen(/Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/MySQLdb/_mysql.cpython-37m-darwin.so, 2): Library not loaded: @rpath/libmysqlclient.21.dylib Referenced from: /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/MySQLdb/_mysql.cpython-37m-darwin.so Reason: image not found
+            </blockquote>
+            <p>Add the following line to the <b>~/.bash_profile</b> file: </p>
+            <blockquote class="blockquote">
+              export DYLD_LIBRARY_PATH=/usr/local/mysql/lib/:$DYLD_LIBRARY_PATH
+            </blockquote>
+            <br />
+            
+          </div>
+        </div><!-- .col-md-7 close -->
+      </div>
+    
+    </div>
+    <!-- /.container -->
+  </section>
+
+<!-- Clients Logo Section Start -->
+<!--
+<section id="clients-logo-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <div id="clients-logo" class="owl-carousel">
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo1.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo2.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo3.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo4.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo5.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo3.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo2.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo5.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo1.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo4.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo5.png" alt="Features">
+            </div>
+            <div class="clients-logo-img">
+              <img src="{{ site.baseurl }}/img/clients/clients-logo3.png" alt="Features">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+<!-- Call to action Start -->
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+					<h2>We give assurance in this uncertain world</h2>
+					<p>Read more about what we do and our philosophy of coding. Judge for yourself the work and results we’ve achieved for other clients, an    d meet our highly experienced Team who just love to code.</p>
+					<a class="btn btn-default btn-call-to-action" href="{{ "/blog" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend:     site.url }}" >Look at Our Story</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+#global-header .block {
+    padding-left: 0px;
+}
+</style>
