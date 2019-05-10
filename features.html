@@ -40,12 +40,14 @@ permalink: /features/
           <hr />
           <p>Our program is split into FOUR different components, namely: Learning Tool, Admin Share Generation, Admin Share Reconstruction, Client Cheque Upload</p>
           <br />
-          <div id="recon_clean_containter" style="max-width: 400px; padding: 0px !important; margin: 0px auto" class="col-xs-6 col-sm-12 col-md-12 col-lg-6">
-            <img src="https://raw.githubusercontent.com/erwinleonardy/VSignIt/master/img/public/recon_share.png">
-            <img src="https://raw.githubusercontent.com/erwinleonardy/VSignIt/master/img/public/recon_clean.png">
-          </div>
-          <div class="col-xs-6 col-sm-12 col-md-12 col-lg-6" style="padding: 0px !important; max-width:400px; margin: 0px auto">
-            <div id="response-msg" class="alert alert-info" role="alert" style="width:100%; text-align: center">TRY IT OUT : <b>Move the slider</b> to see the magic!</div>
+          <div class="container">
+            <div id="recon_clean_containter" style="max-width: 400px; padding: 0px !important; margin: 0px auto" class="col-xs-6 col-sm-12 col-md-12 col-lg-6">
+              <img src="https://raw.githubusercontent.com/erwinleonardy/VSignIt/master/img/public/recon_share.png">
+              <img src="https://raw.githubusercontent.com/erwinleonardy/VSignIt/master/img/public/recon_clean.png">
+            </div>
+            <div class="col-xs-6 col-sm-12 col-md-12 col-lg-6" style="padding: 0px !important; max-width:400px; margin: 0px auto">
+              <div id="response-msg" class="alert alert-info" role="alert" style="width:100%; text-align: center">TRY IT OUT : <b>Move the slider</b> to see the magic!</div>
+            </div>
           </div>
 
           <p class="lead font-weight-bold">0) Learning Tool</p>
@@ -174,3 +176,6 @@ permalink: /features/
     $("#recon_clean_containter").twentytwenty();
   });
 </script>
+
+<script language="JavaScript" type="text/javascript" src="{{ "/js/jquery.twentytwenty.js" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}></script>
+<script language="JavaScript" type="text/javascript" src="{{ "/js/jquery.event.move.js" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}></script>
