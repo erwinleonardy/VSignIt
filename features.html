@@ -219,15 +219,13 @@ permalink: /features/
 
     $(document).ready(function(){
       $('#list-tab a').on('click', function (e) {
-        console.log("A");
         e.preventDefault();
         $('#list-tab a.active').removeClass("active");
-        $('#list-tab a.active').hide();
+        var toBeHidden = $('#list-tab a.active').attr('id');
+        console.log(toBeHidden);
       
         $(document.getElementById(e.target.id.slice(0, -5))).show();
-        console.log(e.target.href);
         $(this).tab('show');
-        console.log("C");
       })
 
       $('a[data-toggle="list"]').on('shown.bs.tab', function (e) {
