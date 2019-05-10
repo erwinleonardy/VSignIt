@@ -209,7 +209,7 @@ permalink: /features/
     $(document).ready(function(){
       $('#list-tab a').on('click', function (e) {
         e.preventDefault();
-        document.getElementById(e.id).style.display = "inline";
+        document.getElementById(e.target.id).style.display = "inline";
         $('#list-tab a.active').removeClass("active");
         $(this).tab('show');
       })
