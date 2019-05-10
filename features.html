@@ -191,9 +191,21 @@ permalink: /features/
   $(window).on("load", function() {
     $("#recon_clean_containter").twentytwenty();
 
+    $('#myList a:first-child').tab('show') // Select first tab
+
     $('#list-tab a').on('click', function (e) {
-      e.preventDefault()
-      $(this).tab('show')
+      e.preventDefault();
+      $(this).tab('show');
+    })
+
+    $('a[data-toggle="list"]').on('shown.bs.tab', function (e) {
+      newTab = e.target; // newly activated tab
+      prevTab = e.relatedTarget; // previous active tab
+
+      console.log(newTab);
+      console.log(prevTab);
+
+      // $(newTab).removeClass( "show active" )
     })
   });
 </script>
