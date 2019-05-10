@@ -4,6 +4,10 @@ title: VSignIt
 permalink: /
 ---
 
+<div id="loading">
+  <img id="loading-image" src="{{ "/img/ajax-loader.gif" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="Loading..." />
+</div>
+
 <!-- Slider Start -->
 <section id="slider">
   <div class="container">
@@ -260,3 +264,9 @@ permalink: /
     </div>
   </div>
 </section>
+
+<script>
+  $(window).on("load", function() {
+    $('#loading').hide();
+  });
+</script>
