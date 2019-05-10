@@ -197,15 +197,9 @@ permalink: /features/
       $('#list-tab a').on('click', function (e) {
         e.preventDefault();
         $(this).tab('show');
+        console.log(relatedTarget);
+        console.log("\n\n\n");
       })
-
-      $('a[data-toggle="list"]').on('hide.bs.tab', function (e) {
-        currTab = e.target; // newly activated tab
-        $(currTab).removeClass( "active" );
-
-        console.log("Hidden");
-        console.log(currTab);
-      });
 
       $('a[data-toggle="list"]').on('shown.bs.tab', function (e) {
         newTab = e.target; // newly activated tab
