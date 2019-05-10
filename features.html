@@ -224,9 +224,8 @@ permalink: /features/
         $('#list-tab a.active').removeClass("active");
         $('#list-tab a.active').hide();
         
-        target = '\'#' + e.target.id.slice(0, -5) + '\''
-        $(target).show();
-        console.log(e.target.id.slice(0, -5));
+        $(e.target.href).show();
+        console.log(e.target.href);
         $(this).tab('show');
         console.log("C");
       })
