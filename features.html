@@ -199,7 +199,7 @@ permalink: /features/
         $(this).tab('show');
       })
 
-      $('a[data-toggle="list"]').on('show.bs.tab', function (e) {
+      $('a[data-toggle="list"]').on('hide.bs.tab', function (e) {
         currTab = e.target; // newly activated tab
         $(currTab).removeClass( "active" );
 
