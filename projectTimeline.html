@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Project Timeline
-permalink: /projecttimeline/
+title: Timeline
+permalink: /timeline/
 ---
 <div id="loading">
   <img id="loading-image" src="{{ "/img/ajax-loader.gif" | prepend: site.baseurl | prepend : site.title | prepend: "/" | prepend: site.url }}" alt="Loading..." />
@@ -86,3 +86,9 @@ permalink: /projecttimeline/
     </div>
   </div>
 </section>
+
+<script>
+  $(window).on("load", function() {
+    $('#loading').hide();
+  });
+</script>
