@@ -586,6 +586,9 @@ font header .navbar-default .navbar-nav li a:hover {
 #portfolio-work .block .mix {
   display: none;
 }
+#portfolio-work .block .Video {
+  width: 100%;
+}
 /*--
 	wrapper-work Start
 --*/
