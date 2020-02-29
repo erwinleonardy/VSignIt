@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    4youreyesonly (0.1.0)
+    VSignIt (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -46,7 +46,7 @@ GEM
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (3.0.3)
-    rake (12.3.2)
+    rake (12.3.3)
     rb-fsevent (0.10.3)
     rb-inotify (0.10.0)
       ffi (~> 1.0)
@@ -63,7 +63,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  4youreyesonly!
+  VSignIt!
   bundler (~> 2.0.1)
   jekyll (~> 3.8.5)
   rake (~> 12.3.1)
